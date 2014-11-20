@@ -9,7 +9,7 @@ angular.module('fullstackApp', [
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
-      .otherwise('/');
+      .otherwise('/form/form.profile');
 
     $locationProvider.html5Mode(true);
   });
