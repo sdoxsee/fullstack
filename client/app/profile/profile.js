@@ -7,5 +7,10 @@ angular.module('fullstackApp')
         url: '/profile',
         templateUrl: 'app/profile/profile.html',
         controller: 'ProfileCtrl'
+      })
+      .state('enrollment.profile', {
+        url: '/profile',
+        templateUrl: 'app/profile/profile.html',
+        controller: 'ProfileCtrl'
       });
   });

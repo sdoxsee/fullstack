@@ -9,8 +9,8 @@ angular.module('fullstackApp')
     // });
 
     $scope.awesomeThings = [
-      {name: 'My Profile', state: 'profile'},
-      {name: 'Enroll Now', state: 'enrollment'}
+      {name: 'My Profile', state: 'profile.details'},
+      {name: 'Enroll Now', state: 'enrollment.profile.details'}
       // .profile'}
     ];
 
