@@ -1,16 +1,16 @@
 'use strict';
 
-describe('Controller: FormCtrl', function () {
+describe('Controller: EnrollmentCtrl', function () {
 
   // load the controller's module
   beforeEach(module('fullstackApp'));
 
-  var FormCtrl, scope;
+  var EnrollmentCtrl, scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    FormCtrl = $controller('FormCtrl', {
+    EnrollmentCtrl = $controller('EnrollmentCtrl', {
       $scope: scope
     });
   }));

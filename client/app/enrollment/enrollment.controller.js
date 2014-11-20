@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('fullstackApp')
-  .controller('PaymentCtrl', function ($scope) {
+  .controller('EnrollmentCtrl', function ($scope) {
     $scope.message = 'Hello';
   });

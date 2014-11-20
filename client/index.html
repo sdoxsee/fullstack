@@ -25,12 +25,28 @@
     <!-- endbuild -->
   </head>
   <body ng-app="fullstackApp">
+
+    <div ng-include="'components/navbar/navbar.html'"></div>
+
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ui-view=""></div>
+    <div class="container">
+      <div ui-view=""></div>
+      <br/>
+      <br/>
+      <br/>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Angular Fullstack v2.0.13 |
+          <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+          <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+        </div>
+      </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -63,16 +79,12 @@
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
           <!-- injector:js -->
-          <script src="app/form/form.controller.js"></script>
-          <script src="app/form/form.js"></script>
-          <script src="app/form/interests/interests.controller.js"></script>
-          <script src="app/form/interests/interests.js"></script>
-          <script src="app/form/payment/payment.controller.js"></script>
-          <script src="app/form/payment/payment.js"></script>
-          <script src="app/form/profile/profile.controller.js"></script>
-          <script src="app/form/profile/profile.js"></script>
+          <script src="app/enrollment/enrollment.controller.js"></script>
+          <script src="app/enrollment/enrollment.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
+          <script src="app/profile/profile.controller.js"></script>
+          <script src="app/profile/profile.js"></script>
           <script src="components/modal/modal.service.js"></script>
           <script src="components/navbar/navbar.controller.js"></script>
           <!-- endinjector -->

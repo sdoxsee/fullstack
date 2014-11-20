@@ -90,10 +90,8 @@ pre                             { margin-bottom:20px; }
 
 // Component styles are injected through grunt
 // injector
-@import 'form/form.scss';
-@import 'form/interests/interests.scss';
-@import 'form/payment/payment.scss';
-@import 'form/profile/profile.scss';
+@import 'enrollment/enrollment.scss';
 @import 'main/main.scss';
+@import 'profile/profile.scss';
 @import 'modal/modal.scss';
 // endinjector

@@ -3,9 +3,9 @@
 angular.module('fullstackApp')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('form.profile', {
-        url: '/form.profile',
-        templateUrl: 'app/form/profile/profile.html',
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'app/profile/profile.html',
         controller: 'ProfileCtrl'
       });
   });
