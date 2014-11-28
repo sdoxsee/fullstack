@@ -1,8 +1,12 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
 
-// @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-@import 'font-awesome/scss/font-awesome';
+@import "bootswatch-scss/darkly/variables";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "bootswatch-scss/darkly/bootswatch";
+
+@import "font-awesome/scss/font-awesome";
 
 /**
  * App-wide Styles
@@ -39,11 +43,13 @@ pre                             { margin-bottom:20px; }
 
 /* numbered buttons */
 #status-buttons                 {  }
-#status-buttons a               { color:#FFF; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a               {
+  color:#FFF;
+  display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
 #status-buttons a:hover         { text-decoration:none; }
 #status-buttons span
 {
-  background:#080808; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; border-radius:50%;
+  color:#fff; background:#080808; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; border-radius:50%;
 }
 
 /* active buttons */
@@ -51,15 +57,11 @@ pre                             { margin-bottom:20px; }
 
 // Component styles are injected through grunt
 
-@import "bootswatch/darkly/variables";
-// @import "bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "bootswatch/darkly/bootswatch";
-
 // injector
 @import 'enrollment/enrollment.scss';
 @import 'main/main.scss';
 @import 'profile/beneficiaries/beneficiaries.scss';
+@import 'profile/dependents/dependents.scss';
 @import 'profile/details/details.scss';
 @import 'profile/profile.scss';
 @import 'modal/modal.scss';

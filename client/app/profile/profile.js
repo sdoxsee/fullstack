@@ -13,4 +13,5 @@ angular.module('fullstackApp')
         templateUrl: 'app/profile/profile.html',
         controller: 'ProfileCtrl'
       });
+
   });

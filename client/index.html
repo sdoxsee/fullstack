@@ -17,11 +17,6 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
-    <!-- <link rel="stylesheet" href="app/style.css"> -->
-    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css"> -->
-      <!-- injector:css -->
-      <link rel="stylesheet" href="app/style.css">
-      <!-- endinjector -->
     <!-- endbuild -->
   </head>
   <body ng-app="fullstackApp">
@@ -62,7 +57,6 @@
     <![endif]-->
     <!-- build:js({client,node_modules}) app/vendor.js -->
       <!-- bower:js -->
-      <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="bower_components/angular/angular.js"></script>
       <script src="bower_components/angular-resource/angular-resource.js"></script>
       <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -82,6 +76,8 @@
           <script src="app/main/main.js"></script>
           <script src="app/profile/beneficiaries/beneficiaries.controller.js"></script>
           <script src="app/profile/beneficiaries/beneficiaries.js"></script>
+          <script src="app/profile/dependents/dependents.controller.js"></script>
+          <script src="app/profile/dependents/dependents.js"></script>
           <script src="app/profile/details/details.controller.js"></script>
           <script src="app/profile/details/details.js"></script>
           <script src="app/profile/profile.controller.js"></script>
