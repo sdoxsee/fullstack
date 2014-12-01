@@ -16,6 +16,45 @@
           "male": "Male",
           "undifferentiated": "Undifferentiated"
         }
+      },
+      "province": {
+        "title": "Province",
+        "options": {
+          "ab" : "Alberta",
+          "bc": "British Columbia",
+          "mb": "Manitoba",
+          "nb": "New Brunswick",
+          "nl": "Newfoundland and Labrador",
+          "nt": "Northwest Territories",
+          "ns": "Nova Scotia",
+          "nu": "Nunavut",
+          "on": "Ontario",
+          "pe": "Prince Edward Island",
+          "qc": "Quebec",
+          "sk": "Saskatchewan",
+          "yt": "Yukon"
+        }
+      },
+      "maritalStatus": {
+        "title": "Marital Status",
+        "options": {
+          "married": "Married",
+          "single": "Single"
+        }
+      },
+      "smokingStatus": {
+        "title": "Smoking Status",
+        "options": {
+          "no": "No",
+          "yes": "Yes"
+        }
+      },
+      "earningFrequency": {
+        "title": "Earning Frequency",
+        "options": {
+          "hourly": "Hourly",
+          "daily": "Daily"
+        }
       }
     }
   },

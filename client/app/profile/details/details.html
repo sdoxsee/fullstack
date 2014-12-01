@@ -1,18 +1,101 @@
 <div class="form-group">
   <label for="firstname">First Name</label>
   <input type="text" name="firstName" ng-model="formData.firstName" class="form-control">
-
+</div>
+<div class="form-group">
   <label for="middleInitial">Middle Initial</label>
   <input type="text" name="middleInitial" ng-model="formData.middleInitial" class="form-control">
-
+</div>
+<div class="form-group">
   <label for="lastName">Last Name</label>
   <input type="text" name="lastName" ng-model="formData.lastName" class="form-control">
-
+</div>
+<div class="form-group">
   <label for="gender">Gender</label>
-  <select ng-model="formData.gender" ng-model="formData.gender" ng-options="gender.name | translate for gender in genders" class="form-control">
+  <select name="gender" ng-model="formData.gender" ng-options="gender.name | translate for gender in genders" class="form-control">
   </select>
 </div>
+<div class="form-group">
+  <label for="dateOfBirth">DOB</label>
+  <input type="date" name="dateOfBirth" ng-model="formData.dateOfBirth" class="form-control">
+</div>
 
+<div class="form-group">
+  <label for="address">Address</label>
+  <input type="text" name="address" ng-model="formData.address" class="form-control">
+</div>
+<div class="form-group">
+  <label for="city">City</label>
+  <input type="text" name="city" ng-model="formData.city" class="form-control">
+</div>
+<div class="form-group">
+  <label for="province">Province</label>
+  <select name="province" ng-model="formData.province" ng-options="province.name | translate for province in provinces" class="form-control">
+  </select>
+</div>
+<div class="form-group">
+  <label for="postalCode">Postal Code</label>
+  <input type="text" name="postalCode" ng-model="formData.postalCode" class="form-control">
+</div>
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" name="email" ng-model="formData.email" class="form-control">
+</div>
+<div class="form-group">
+  <label for="alternateEmail">Alternate Email</label>
+  <input type="email" name="alternameEmail" ng-model="formData.alternateEmail" class="form-control">
+</div>
+<div class="form-group">
+  <label for="phoneNumber">Phone Number</label>
+  <input type="text" name="phoneNumber" ng-model="formData.phoneNumber" class="form-control">
+</div>
+<div class="form-group">
+  <label for="cellNumber">Cell Number</label>
+  <input type="text" name="cellNumber" ng-model="formData.cellNumber" class="form-control">
+</div>
+<div class="form-group">
+  <label for="maritalStatus">Marital Status</label>
+  <select name="maritalStatus" ng-model="formData.maritalStatus" ng-options="maritalStatus.name | translate for maritalStatus in maritalStatuses" class="form-control">
+  </select>
+</div>
+<div class="form-group">
+  <label for="spouseName">Spouse Name</label>
+  <input type="text" name="spouseName" ng-model="formData.spouseName" class="form-control">
+</div>
+<div class="form-group">
+  <label for="spouseEmail">Spouse Email</label>
+  <input type="email" name="spouseEmail" ng-model="formData.spouseEmail" class="form-control">
+</div>
+<div class="form-group">
+  <label for="smokingStatus">Smoking Status</label>
+  <select name="smokingStatus" ng-model="formData.smokingStatus" ng-options="smokingStatus.name | translate for smokingStatus in smokingStatuses" class="form-control">
+  </select>
+</div>
+<div class="form-group">
+  <label for="occupation">Occupation</label>
+  <input type="text" name="occupation" ng-model="formData.occupation" class="form-control">
+</div>
+<div class="form-group">
+  <label for="earnings">Earnings</label>
+  <input type="text" name="earnings" ng-model="formData.earnings" class="form-control">
+</div>
+<div class="form-group">
+  <label for="earningsFrequency">Earnings Frequency</label>
+  <select name="earningsFrequency" ng-model="formData.earningsFrequency" ng-options="earningFrequency.name | translate for earningFrequency in earningFrequencies" class="form-control">
+  </select>
+</div>
+<div class="form-group">
+  <label for="hoursPerWeek">Hours Per Week</label>
+  <input type="number" name="hoursPerWeek" ng-model="formData.hoursPerWeek" class="form-control">
+</div>
+<div class="form-group">
+  <label for="employmentDate">Employment Date</label>
+  <input type="date" name="employmentDate" ng-model="formData.employmentDate" class="form-control">
+</div>
+<div class="form-group">
+  <label for="extendedHealthId">Extended Health & Dental ID #</label>
+  <input type="number" name="extendedHealthId" ng-model="formData.extendedHealthId" class="form-control">
+</div>
 <div class="form-group row">
   <div class="col-xs-6 col-xs-offset-3">
     <a ui-sref="^.beneficiaries" class="btn btn-block btn-info">
