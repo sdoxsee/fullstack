@@ -1,0 +1,23 @@
+{
+  "global": {
+    "title": "Nomad",
+    "menu": {
+      "language": "Language"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "details": {
+      "title": "Details",
+      "gender": {
+        "title": "Gender",
+        "options": {
+          "female": "Female",
+          "male": "Male",
+          "undifferentiated": "Undifferentiated"
+        }
+      }
+    }
+  },
+  "footer": "Your footer"
+}

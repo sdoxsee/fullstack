@@ -1,11 +1,16 @@
 <div class="form-group">
-  <label for="name">Name</label>
-  <input type="text" class="form-control" name="name" ng-model="formData.name">
-</div>
+  <label for="firstname">First Name</label>
+  <input type="text" name="firstName" ng-model="formData.firstName" class="form-control">
 
-<div class="form-group">
-  <label for="email">Email</label>
-  <input type="text" class="form-control" name="email" ng-model="formData.email">
+  <label for="middleInitial">Middle Initial</label>
+  <input type="text" name="middleInitial" ng-model="formData.middleInitial" class="form-control">
+
+  <label for="lastName">Last Name</label>
+  <input type="text" name="lastName" ng-model="formData.lastName" class="form-control">
+
+  <label for="gender">Gender</label>
+  <select ng-model="formData.gender" ng-model="formData.gender" ng-options="gender.name | translate for gender in genders" class="form-control">
+  </select>
 </div>
 
 <div class="form-group row">
