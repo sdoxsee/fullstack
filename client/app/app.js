@@ -6,10 +6,18 @@ angular.module('fullstackApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
+  'ui.bootstrap.showErrors',
   'tmh.dynamicLocale',
   'pascalprecht.translate'
 ])
-  .config(function ($stateProvider, $urlRouterProvider, $locationProvider, tmhDynamicLocaleProvider, $translateProvider) {
+  .config(
+    function (
+      $stateProvider,
+      $urlRouterProvider,
+      $locationProvider,
+      showErrorsConfigProvider,
+      tmhDynamicLocaleProvider,
+      $translateProvider) {
 
     $urlRouterProvider
       .when('/profile', '/profile/details')
@@ -17,6 +25,8 @@ angular.module('fullstackApp', [
       .otherwise('/main');
 
     $locationProvider.html5Mode(true);
+
+    showErrorsConfigProvider.showSuccess(true);
 
     // Initialize angular-translate
     $translateProvider.useStaticFilesLoader({

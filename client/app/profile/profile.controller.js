@@ -9,7 +9,11 @@ angular.module('fullstackApp')
     $scope.formData = {};
 
     // function to process the form
-    $scope.processForm = function() {
-      alert('awesome!');
+    $scope.processForm = function(isValid) {
+
+      // check to make sure the form is completely valid
+      // if (isValid) {
+        alert('our form is amazing');
+      // }
     };
   });

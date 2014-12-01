@@ -56,6 +56,14 @@ pre                             { margin-bottom:20px; }
 /* active buttons */
 #status-buttons a.active span   { background:#00BC8C; }
 
+.form-group .help-block {
+  display: none;
+}
+
+.form-group.has-error .help-block {
+  display: block;
+}
+
 // Component styles are injected through grunt
 
 // injector
