@@ -5,6 +5,6 @@ They are written in English to avoid character encoding issues (not a perfect so
 'use strict';
 
 angular.module('fullstackApp').constant('LANGUAGES', {
-  'en': 'English',
-  'fr': 'French',
+  'en': 'global.menu.language.options.en',
+  'fr': 'global.menu.language.options.fr',
 });

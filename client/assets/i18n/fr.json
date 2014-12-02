@@ -2,7 +2,13 @@
   "global": {
     "title": "Nomad",
     "menu": {
-      "language": "Langue"
+      "language": {
+        "title": "Langue",
+        "options": {
+          "en": "English",
+          "fr": "Français"
+        }
+      }
     }
   },
   "profile": {
